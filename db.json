@@ -77,7 +77,7 @@
       "article": "T8",
       "available": true,
       "category": "Men",
-      "type": "hoodies",
+      "type": "hoodie",
       "description": "89% Cotton, 11% Polyester."
     },
     {
@@ -87,7 +87,7 @@
       "article": "T9",
       "available": true,
       "category": "Men",
-      "type": "hoodies",
+      "type": "hoodie",
       "description": "89% Cotton, 11% Polyester."
     },
     {
@@ -157,7 +157,7 @@
       "article": "T16",
       "available": true,
       "category": "Men",
-      "type": "t-shirts",
+      "type": "t-shirt",
       "description": "62% Cotton, 38% Polyester."
     },
     {
@@ -167,7 +167,7 @@
       "article": "T17",
       "available": true,
       "category": "Men",
-      "type": "t-shirts",
+      "type": "t-shirt",
       "description": "62% Cotton, 38% Polyester."
     },
     {
@@ -297,7 +297,7 @@
       "article": "T30",
       "available": true,
       "category": "Boys",
-      "type": "hoodies",
+      "type": "hoodie",
       "description": "93% Cotton, 7% Polyester."
     },
     {

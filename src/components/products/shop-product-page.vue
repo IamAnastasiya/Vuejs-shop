@@ -11,7 +11,8 @@
     </div>
     <div class="info-wrapper">
       <p class="product-info">Product name: {{product.name}}</p>
-      <p class="product-info">Desctiption: {{product.description}}</p>
+      <p class="product-info">Category: {{product.type}}</p>
+      <p class="product-info">Description: {{product.description}}</p>
       <p class="product-info">Product price: {{product.price}} usd</p>
       <button
           class="shop-product-item-add-to-basket-btn btn"
