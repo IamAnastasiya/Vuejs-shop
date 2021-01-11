@@ -1,45 +1,47 @@
 <template>
   <div class="shop-main-wrapper">
-    <p>{{title}}</p>
-    <shop-products/>
-    <shop-basket/>
+    <shop-header/>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    <shop-footer/>
+
   </div>
 </template>
 
 
 <script>
-  import shopProducts from './shop-products'
-  import shopBasket from './shop-basket'
+  import shopHeader from './layouts/shop-header'
+  import shopFooter from './layouts/shop-footer'
+
 
   export default {
-    name: "fs-main-wrapper",
+    name: "shop-main-wrapper",
     components: {
-      shopProducts,
-      shopBasket,
+      shopHeader,
+      shopFooter
     },
     props: {},
     data() {
       return {
-        title: "Main Wrapper"
+        title: "Main Wrapper",
       }
     },
-    computed: {},
+    computed: {
+
+    },
     methods: {},
     watch: {},
     mounted () {
-      console.log("Hello I am alive!")
+
     }
   }
 
 </script>
 
 
-<style>
-  .fs-main-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+<style >
+  .shop-main-wrapper {
     max-width: 1300px;
     margin: 0 auto;
   }

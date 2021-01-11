@@ -1,13 +1,13 @@
 <template>
   <div class="shop-basket-item">
-    <img class="shop-basket-item__image" :src="require('../assets/images/' + basket_item_data.image)" alt="" >
+    <img class="shop-basket-item__image" :src="require('../../assets/images/' + basket_item_data.image)" alt="" >
     <div class="shop-basket-item-info">
-      <p>{{basket_item_data.name}}</p>
-      <p>Price: {{basket_item_data.price}} грн.</p>
-      <p>{{basket_item_data.article}}</p>
+      <p class="basket-info">{{basket_item_data.name}}</p>
+      <button @click="deleteFromBasket">Delete</button>
+<!--      <p>{{basket_item_data.article}}</p>-->
     </div>
     <div class="shop-basket-item_quantity">
-      <p>Кол-во:</p>
+      <p class="basket-info">Кол-во:</p>
       <span>
         <span class="quantity-btn" @click="decrementItem">-</span>
               {{basket_item_data.quantity}}
@@ -15,7 +15,8 @@
       </span>
 
     </div>
-    <button @click="deleteFromBasket">Delete</button>
+
+    <p class="price-value">{{basket_item_data.price}} $</p>
 <!--    <p class="shop-product-item-price">Price: {{ product_data.price }} грн.</p>-->
   </div>
 </template>
@@ -63,9 +64,14 @@ export default {
     align-items: center;
 
     &__image {
-      width: 100px;
+      width: 70px;
     }
-
+    .basket-info {
+      font-size: 12px;
+    }
+    .price-value {
+      font-weight: bold;
+    }
     .quantity-btn {
       cursor: pointer;
       box-shadow: 0 0 8px 0 #e0e0e0;

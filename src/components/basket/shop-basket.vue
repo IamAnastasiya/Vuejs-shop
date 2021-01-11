@@ -1,7 +1,7 @@
 <template>
     <div class="shop-basket">
       <router-link :to="{name: 'products'}">
-        <div class="shop-products-link-to-basket">Back to products</div>
+        <div class="shop-products-link-to-catalog">Back to products</div>
       </router-link>
       <h1>Your basket</h1>
       <p v-if="!basket_data.length">Your basket is empty...</p>
@@ -15,8 +15,12 @@
       />
       <div class="basket-total">
         <p class="basket-name">Total:</p>
-        <p class="basket-amount">{{basketTotalCost}} грн.</p>
+        <p class="basket-amount">{{basketTotalCost}} usd</p>
       </div>
+      <router-link :to="{name: 'checkout'}" @click="goToCheckout">
+        <button class="checkout-btn">Go to checkout</button>
+      </router-link>
+
   </div>
 </template>
 
@@ -72,6 +76,11 @@ export default {
     },
     deleteFromBasket (index) {
       this.DELETE_FROM_BASKET(index);
+    },
+    goToCheckout () {
+      if (this.basket_data.length > 0) {
+        console.log(123)
+      }
     }
   },
 
@@ -79,24 +88,44 @@ export default {
 </script>
 
 <style lang="scss">
+
+    .shop-basket {
+      position: relative;
+      padding-bottom: 20px;
+    }
     .shop-basket-item {
       margin-bottom: 15px;
       box-shadow: 0 0 8px 0 #e0e0e0;
       padding: 7px;
     }
     .basket-total {
-      padding: 5px;
+      padding: 4px;
       display: flex;
       justify-content: center;
-      background: #553066;
+      border: 1px solid #540254;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
     .basket-name {
       margin-right: 10px;
-      color: white;
       font-weight: bold;
     }
     .basket-amount {
+      font-weight: bold;
+    }
+    .checkout-btn {
+      background-color: #540254;
       color: white;
       font-weight: bold;
+      padding: 10px;
+    }
+    .shop-products-link-to-catalog {
+      position: absolute;
+      top: -68px;
+      right: 0;
+      background: #540254;
+      padding: 15px 7px;
+      color: white;
+      font-size: 14px;
     }
 </style>

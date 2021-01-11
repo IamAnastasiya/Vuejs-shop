@@ -1,19 +1,324 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "image": "1.jpg",
+      "name": "Vero Moda",
+      "price": 200,
+      "article": "T1",
+      "available": true,
+      "category": "Women",
+      "type": "dress",
+      "description": "Machine washable. 100% Polyester."
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "2.jpg",
+      "name": "Nümph",
+      "price": 70,
+      "article": "T2",
+      "available": true,
+      "category": "Women",
+      "type": "dress",
+      "description": "Machine washable. 100% Polyester."
+    },
+    {
+      "image": "3.jpg",
+      "name": "Freequent",
+      "price": 74,
+      "article": "T3",
+      "available": false,
+      "category": "Women",
+      "type": "dress",
+      "description": "Machine washable. 100% Polyester."
+    },
+    {
+      "image": "4.jpg",
+      "name": "Pieces",
+      "price": 120,
+      "article": "T4",
+      "available": true,
+      "category": "Women",
+      "type": "dress",
+      "description": "Machine washable. Outer: 100% Lamb Leather, Lining: 100% Polyester."
+    },
+    {
+      "image": "5.jpg",
+      "name": "Freequent",
+      "price": 300,
+      "article": "T5",
+      "available": false,
+      "category": "Women",
+      "type": "skirt",
+      "description": "Machine washable. Main 92% Polyester, 8% Elastane. Lining 100% Polyester."
+    },
+    {
+      "image": "6.jpg",
+      "name": "Vero Moda",
+      "price": 150,
+      "article": "T6",
+      "available": true,
+      "category": "Women",
+      "type": "skirt",
+      "description": "Machine washable. Main 92% Polyester, 8% Elastane. Lining 100% Polyester."
+    },
+    {
+      "image": "7.jpg",
+      "name": "Tommy Hilfiger",
+      "price": 140,
+      "article": "T7",
+      "available": true,
+      "category": "Men",
+      "type": "knit",
+      "description": "89% Cotton, 11% Polyester."
+    },
+    {
+      "image": "8.jpg",
+      "name": "Tommy Hilfiger",
+      "price": 100,
+      "article": "T8",
+      "available": true,
+      "category": "Men",
+      "type": "hoodies",
+      "description": "89% Cotton, 11% Polyester."
+    },
+    {
+      "image": "9.jpg",
+      "name": "Selected",
+      "price": 170,
+      "article": "T9",
+      "available": true,
+      "category": "Men",
+      "type": "hoodies",
+      "description": "89% Cotton, 11% Polyester."
+    },
+    {
+      "image": "10.jpg",
+      "name": "Pieces",
+      "price": 220,
+      "article": "T10",
+      "available": true,
+      "category": "Women",
+      "type": "jeans",
+      "description": "80% Cotton, 17% Polyester, 3% Elastane."
+    },
+    {
+      "image": "11.jpg",
+      "name": "G-Star",
+      "price": 120,
+      "article": "T11",
+      "available": true,
+      "category": "Women",
+      "type": "jeans",
+      "description": "80% Cotton, 17% Polyester, 3% Elastane."
+    },
+    {
+      "image": "12.jpg",
+      "name": "G-Star",
+      "price": 180,
+      "article": "T12",
+      "available": true,
+      "category": "Women",
+      "type": "jeans",
+      "description": "80% Cotton, 17% Polyester, 3% Elastane."
+    },
+    {
+      "image": "13.jpg",
+      "name": "Nümph",
+      "price": 400,
+      "article": "T13",
+      "available": true,
+      "category": "Women",
+      "type": "blouse",
+      "description": "Machine washable. 100% Polyester."
+    },
+    {
+      "image": "14.jpg",
+      "name": "Lipsy",
+      "price": 175,
+      "article": "T14",
+      "available": true,
+      "category": "Women",
+      "type": "blouse",
+      "description": "Machine washable. 100% Polyester."
+    },
+    {
+      "image": "15.jpg",
+      "name": "Only",
+      "price": 270,
+      "article": "T15",
+      "available": true,
+      "category": "Women",
+      "type": "blouse",
+      "description": "Machine washable. 100% Polyester."
+    },
+    {
+      "image": "16.jpg",
+      "name": "Samsøe Samsøe",
+      "price": 340,
+      "article": "T16",
+      "available": true,
+      "category": "Men",
+      "type": "t-shirts",
+      "description": "62% Cotton, 38% Polyester."
+    },
+    {
+      "image": "17.jpg",
+      "name": "Samsøe Samsøe",
+      "price": 110,
+      "article": "T17",
+      "available": true,
+      "category": "Men",
+      "type": "t-shirts",
+      "description": "62% Cotton, 38% Polyester."
+    },
+    {
+      "image": "18.jpg",
+      "name": "KIDS ONLY",
+      "price": 200,
+      "article": "T18",
+      "available": true,
+      "category": "Girls",
+      "type": "jacket",
+      "description": "Heavyweight padded jacket in a shower-resistant cuffs and a warm faux-fur lining."
+    },
+    {
+      "image": "19.jpg",
+      "name": "KIDS ONLY",
+      "price": 800,
+      "article": "T19",
+      "available": true,
+      "category": "Girls",
+      "type": "jacket",
+      "description": "Main 100% Recycled polyester. Lining 100% Polyester. Wadding 100% Recycled polyester."
+    },
+    {
+      "image": "20.jpg",
+      "name": "Mini A Ture",
+      "price": 500,
+      "article": "T20",
+      "available": true,
+      "category": "Girls",
+      "type": "jacket",
+      "description": "Main 100% Recycled polyester. Lining 100% Polyester. Wadding 100% Recycled polyester."
+    },
+    {
+      "image": "21.jpg",
+      "name": "Molo",
+      "price": 400,
+      "article": "T21",
+      "available": true,
+      "category": "Boys",
+      "type": "jumper",
+      "description": "93% Cotton, 7% Polyester."
+    },
+    {
+      "image": "22.jpg",
+      "name": "Molo",
+      "price": 300,
+      "article": "T22",
+      "available": true,
+      "category": "Boys",
+      "type": "jumper",
+      "description": "93% Cotton, 7% Polyester."
+    },
+    {
+      "image": "23.jpg",
+      "name": "Molo",
+      "price": 270,
+      "article": "T23",
+      "available": true,
+      "category": "Boys",
+      "type": "jumper",
+      "description": "58% Polyester, 34% Acrylic, 6% Nylon, 2% Elastane."
+    },
+    {
+      "image": "24.jpg",
+      "name": "Color Kids",
+      "price": 500,
+      "article": "T24",
+      "available": true,
+      "category": "Girls",
+      "type": "set",
+      "description": "100% Organic cotton."
+    },
+    {
+      "image": "25.jpg",
+      "name": "Color Kids",
+      "price": 300,
+      "article": "T25",
+      "available": true,
+      "category": "Girls",
+      "type": "set",
+      "description": "100% cotton. Machine washable."
+    },
+    {
+      "image": "26.jpg",
+      "name": "Joha",
+      "price": 425,
+      "article": "T26",
+      "available": true,
+      "category": "Girls",
+      "type": "set",
+      "description": "52% Polyester, 48% Cotton"
+    },
+    {
+      "image": "27.jpg",
+      "name": "Color Kids",
+      "price": 270,
+      "article": "T27",
+      "available": true,
+      "category": "Boys",
+      "type": "set",
+      "description": "Jacket Main 100% Polyester. Lining 100% Polyester. Trouser 100% Polyester."
+    },
+    {
+      "image": "28.jpg",
+      "name": "Next",
+      "price": 320,
+      "article": "T28",
+      "available": true,
+      "category": "Boys",
+      "type": "set",
+      "description": "Sweater and Jogger 100% Cotton."
+    },
+    {
+      "image": "29.jpg",
+      "name": "Next",
+      "price": 100,
+      "article": "T29",
+      "available": true,
+      "category": "Girls",
+      "type": "dress",
+      "description": "Sweater and Jogger 100% Cotton."
+    },
+    {
+      "image": "30.jpg",
+      "name": "Joha",
+      "price": 90,
+      "article": "T30",
+      "available": true,
+      "category": "Boys",
+      "type": "hoodies",
+      "description": "93% Cotton, 7% Polyester."
+    },
+    {
+      "image": "31.jpg",
+      "name": "G-Star",
+      "price": 140,
+      "article": "T31",
+      "available": true,
+      "category": "Men",
+      "type": "jeans",
+      "description": "93% Cotton, 7% Polyester."
+    },
+    {
+      "image": "32.jpg",
+      "name": "G-Star",
+      "price": 190,
+      "article": "T32",
+      "available": true,
+      "category": "Men",
+      "type": "jeans",
+      "description": "93% Cotton, 7% Polyester."
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

@@ -1,8 +1,14 @@
 <template>
-  <div class="shop-product-item">
-    <img class="shop-product-item-image" :src=" require('../assets/images/' + product_data.image) " alt="img">
+  <div class="shop-product-item" >
+    <img
+        @click="productClick"
+        class="shop-product-item-image"
+        :src=" require('../../assets/images/' + product_data.image) "
+        alt="img"
+        width="150"
+    >
     <p class="shop-product-item-name">{{ product_data.name }}</p>
-    <p class="shop-product-item-price">Price: {{ product_data.price }} грн.</p>
+    <p class="shop-product-item-price">Price: {{ product_data.price }} usd</p>
     <button
         class="shop-product-item-add-to-basket-btn btn"
         @click="addToBasket">
@@ -30,6 +36,9 @@ export default {
   methods: {
     addToBasket () {
       this.$emit('addToBasket', this.product_data);
+    },
+    productClick () {
+      this.$emit ('productClick', this.product_data.article)
     }
   },
   watch: {},

@@ -5,11 +5,9 @@
           v-for="item in slider_data"
           :key="item.id"
           v-bind:item_data="item"
-
+          @click="filterByCategory(item.category)"
       />
     </div>
-<!--    <button @click="prevSlide"> Prev </button>-->
-<!--    <button @click="nextSlide"> Next </button>-->
   </div>
 </template>
 
@@ -49,6 +47,9 @@
         this.currentSlideIndex++
       }
     },
+    filterByCategory (cat) {
+      console.log(cat)
+    }
   },
   mounted() {
     if (this.interval > 0) {
@@ -64,7 +65,7 @@
 
 <style lang="scss">
   .wrapper {
-    max-width: 700px;
+    max-width: 900px;
     overflow: hidden;
     margin: 0 auto;
   }
