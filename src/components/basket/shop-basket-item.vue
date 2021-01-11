@@ -7,7 +7,7 @@
 <!--      <p>{{basket_item_data.article}}</p>-->
     </div>
     <div class="shop-basket-item_quantity">
-      <p class="basket-info">Кол-во:</p>
+      <p class="basket-info">Q-ty:</p>
       <span>
         <span class="quantity-btn" @click="decrementItem">-</span>
               {{basket_item_data.quantity}}
