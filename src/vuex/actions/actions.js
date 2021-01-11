@@ -7,9 +7,6 @@ export default {
 
         })
             .then((products) => {
-                // products.data.map((item) => {
-                //     item.count = 1;
-                // });
                 commit('SET_PRODUCTS_TO_STATE', products.data);
                 return products;
             })
