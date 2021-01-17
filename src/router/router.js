@@ -5,7 +5,8 @@ import shopProducts from '../components/products/shop-products'
 import shopBasket from '../components/basket/shop-basket'
 import shopMainPage from '../components/main-page/shop-main-page'
 import shopProductPage from '../components/products/shop-product-page'
-import shopOrderForm from '../components/basket/shop-order-form'
+import shopOrderForm from '../components/basket/odrer-form/shop-order-form'
+import shopOrderConfirmation from '../components/basket/odrer-form/shop-order-confirmation'
 
 Vue.use(Router);
 
@@ -42,6 +43,11 @@ let router = new Router({
             path: '/checkout',
             name: 'checkout',
             component: shopOrderForm,
+        },
+        {
+            path: '/checkout/order-done',
+            name: 'order-done',
+            component: shopOrderConfirmation,
         },
     ]
 });

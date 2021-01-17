@@ -22,6 +22,9 @@ export default {
     REMOVE_FROM_BASKET: (state, index) => {
         state.basket.splice(index, 1);
     },
+    CLEAR_ALL_FROM_BASKET: (state) => {
+        state.basket.splice(0, state.basket.length);
+    },
     INCREMENT: (state, index) => {
         state.basket[index].quantity++
     },

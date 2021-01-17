@@ -17,7 +17,7 @@
         <p class="basket-name">Total:</p>
         <p class="basket-amount">{{basketTotalCost}} usd</p>
       </div>
-      <router-link :to="{name: 'checkout'}" @click="goToCheckout">
+      <router-link :to="{name: 'checkout'}" v-if="basket_data.length">
         <button class="checkout-btn">Go to checkout</button>
       </router-link>
 
@@ -76,11 +76,6 @@ export default {
     },
     deleteFromBasket (index) {
       this.DELETE_FROM_BASKET(index);
-    },
-    goToCheckout () {
-      if (this.basket_data.length > 0) {
-        console.log(123)
-      }
     }
   },
 

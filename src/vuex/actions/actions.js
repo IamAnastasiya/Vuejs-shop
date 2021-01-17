@@ -27,6 +27,9 @@ export default {
     DELETE_FROM_BASKET({commit}, index) {
         commit('REMOVE_FROM_BASKET', index);
     },
+    CLEAR_BASKET ({commit}) {
+        commit('CLEAR_ALL_FROM_BASKET');
+    },
     GET_SEARCH_VALUE_TO_VUEX({commit}, value) {
         commit('SET_SEARCH_VALUE_TO_VUEX', value);
     },
