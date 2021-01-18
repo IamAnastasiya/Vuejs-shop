@@ -66,7 +66,7 @@
   .shop-products-link-to-basket {
     color: white;
     background: #540254;
-    padding: 15px 7px 14px;
+    padding: 13px 7px 12px;
   }
 
 </style>

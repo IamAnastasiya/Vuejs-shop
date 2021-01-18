@@ -116,7 +116,7 @@ export default {
   }
   .shop-products-link-to-catalog {
     position: absolute;
-    top: -72px;
+    top: -69px;
     right: 0;
     background: #540254;
     padding: 17px 7px;
