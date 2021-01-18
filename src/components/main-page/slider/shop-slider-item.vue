@@ -3,8 +3,8 @@
 
     <router-link :to="{name: 'category', params: {category: item_data.category}}" class="header-menu-link">
       <img
-          @click="filterCategory(item_data.category)"
-          class="shop-slider-item-img" :src=" require ('../../../assets/images/' + item_data.img)" alt="" width="900">
+        @click="filterCategory(item_data.category)"
+        class="shop-slider-item-img" :src=" require ('../../../assets/images/' + item_data.img)" alt="" width="900">
     </router-link>
 
   </div>
@@ -43,7 +43,5 @@
 </script>
 
 <style>
-  .shop-slider-item-img {
 
-  }
 </style>

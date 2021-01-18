@@ -11,8 +11,8 @@
 
 
 <script>
-  import shopHeader from './layouts/shop-header'
-  import shopFooter from './layouts/shop-footer'
+  import shopHeader from './layouts/header/shop-header'
+  import shopFooter from './layouts/footer/shop-footer'
 
 
   export default {
@@ -40,7 +40,8 @@
 </script>
 
 
-<style >
+<style>
+
   .shop-main-wrapper {
     max-width: 1300px;
     margin: 0 auto;

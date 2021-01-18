@@ -4,7 +4,7 @@
     <div class="shop-basket-item-info">
       <p class="basket-info">{{basket_item_data.name}}</p>
       <button @click="deleteFromBasket">Delete</button>
-<!--      <p>{{basket_item_data.article}}</p>-->
+
     </div>
     <div class="shop-basket-item_quantity">
       <p class="basket-info">Q-ty:</p>
@@ -17,7 +17,7 @@
     </div>
 
     <p class="price-value">{{basket_item_data.price}} $</p>
-<!--    <p class="shop-product-item-price">Price: {{ product_data.price }} грн.</p>-->
+
   </div>
 </template>
 

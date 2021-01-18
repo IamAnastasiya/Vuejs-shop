@@ -1,29 +1,35 @@
 <template>
   <div class="shop-client-name">
     <label for="first-name"></label><br>
-    <input
-        class="name-field"
-        type="text"
-        id="first-name"
-        name="first-name"
-        placeholder="First name"
-        required
-        v-model="firstName"
+    <div
+      class="error"
+      v-if="$v.firstName.$error"
     >
-    <div class="error" v-if="$v.firstName.$invalid">
+      First name should contain at least 3 characters
+    </div>
+    <input
+      class="input-field"
+      type="text"
+      id="first-name"
+      placeholder="First name"
+      v-model.trim="$v.firstName.$model"
+    >
+
+    <label for="last-name"></label><br>
+    <div
+      class="error"
+      v-if="$v.lastName.$error"
+    >
       Last name should contain at least 3 characters
     </div>
-
-    <br>
-
-<!--    <label for="last-name"></label><br>-->
-<!--    <input-->
-<!--        class="name-field"-->
-<!--        type="text"-->
-<!--        id="last-name"-->
-<!--        v-model="lastName"-->
-<!--        placeholder="Last name"-->
-<!--    >-->
+    <input
+      class="input-field"
+      type="text"
+      id="last-name"
+      v-model.trim="$v.lastName.$model"
+      placeholder="Last name"
+      ref="lastName"
+    >
     <br>
 
   </div>
@@ -37,7 +43,7 @@
     data() {
       return {
         firstName: null,
-        // lastName: null,
+        lastName: null,
       }
     },
     validations: {
@@ -45,10 +51,12 @@
         required,
         minLength: minLength(3)
       },
-      // lastName: {
-      //   required,
-      //   minLength: minLength(3)
-      // },
+      lastName: {
+        required,
+        minLength: minLength(3)
+      },
+    },
+    methods: {
     }
 }
 </script>
@@ -57,7 +65,7 @@
   .shop-client-name {
     padding: 20px 0 0;
   }
-  .name-field {
+  .input-field {
     max-width: 400px;
     width: 100%;
     min-height: 30px;

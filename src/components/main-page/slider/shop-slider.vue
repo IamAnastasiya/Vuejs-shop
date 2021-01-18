@@ -2,10 +2,10 @@
   <div class="wrapper">
     <div class="shop-slider" :style="{ 'margin-left': '-' + (100*currentSlideIndex) + '%'}">
       <shop-slider-item
-          v-for="item in slider_data"
-          :key="item.id"
-          v-bind:item_data="item"
-          @click="filterByCategory(item.category)"
+        v-for="item in slider_data"
+        :key="item.id"
+        v-bind:item_data="item"
+        @click="filterByCategory(item.category)"
       />
     </div>
   </div>

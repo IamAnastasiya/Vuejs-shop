@@ -2,20 +2,20 @@
   <div class="shop-select">
     <p>Choose category:</p>
     <p
-        class="title"
-        @click="areOptionsVisible = !areOptionsVisible"
+      class="title"
+      @click="areOptionsVisible = !areOptionsVisible"
     >
       {{selected}}
     </p>
     <div
-        class="options"
-        v-if="areOptionsVisible"
+      class="options"
+      v-if="areOptionsVisible"
     >
       <p
-          class="option-item"
-          v-for="option in options"
-          :key="option.value"
-          @click="selectOption(option)"
+        class="option-item"
+        v-for="option in options"
+        :key="option.value"
+        @click="selectOption(option)"
       >
         {{option.category}}
       </p>
@@ -69,12 +69,10 @@
     position: relative;
     width: 200px;
   }
-
   .title {
     border: 1px solid grey;
     cursor: pointer;
   }
-
   .options {
     border: 1px solid grey;
     position: absolute;
@@ -83,7 +81,6 @@
     width: 100%;
     background: white;
   }
-
   .option-item {
     margin: 0;
     cursor: pointer;
