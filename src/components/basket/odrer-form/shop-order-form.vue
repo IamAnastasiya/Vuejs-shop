@@ -3,10 +3,7 @@
     <h2 class="form-text">Contact information</h2>
     <h3 class="form-text">Please enter your contact information below</h3>
 
-    <form class="form" @submit.prevent="submit">
-<!--      <shop-client-name/>-->
-<!--      <shop-client-email/>-->
-<!--      <shop-client-phone/>-->
+    <form class="form" @submit.prevent>
 
       <label for="first-name"></label><br>
       <div class="error" v-if="$v.form.firstName.$error">First name should contain at least 3 characters</div>
@@ -45,21 +42,14 @@
 </template>
 
 <script>
-  // import shopClientName from './shop-client-name'
-  // import shopClientEmail from './shop-client-email'
-  // import shopClientPhone from './shop-client-phone'
+
   import {mapActions} from 'vuex'
   import {minLength, required, email, helpers} from "vuelidate/lib/validators";
-
   let validFormat = helpers.regex('validFormat', /^\+?3?8?(0\d{9})$/);
 
   export default {
+
   name: "shop-order-form",
-  // components: {
-    // shopClientName,
-    // shopClientEmail,
-    // shopClientPhone
-  // },
   data() {
     return {
       form: {
@@ -80,9 +70,9 @@
   },
   methods: {
     ...mapActions([
-        "CLEAR_BASKET"
+      "CLEAR_BASKET"
     ]),
-    clearFormAndBasketData () {
+    clearFormAndBasketData() {
       document.querySelector('form').reset();
       this.CLEAR_BASKET();
     },
