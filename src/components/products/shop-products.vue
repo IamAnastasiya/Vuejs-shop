@@ -9,11 +9,11 @@
     />
     <div class="shop-products-list">
       <shop-product-item
-          v-for="product in filteredProducts"
-          :key = "product.article"
-          v-bind:product_data="product"
-          @addToBasket = "addToBasket"
-          @productClick="productClick"
+        v-for="product in filteredProducts"
+        :key = "product.article"
+        v-bind:product_data="product"
+        @addToBasket = "addToBasket"
+        @productClick="productClick"
       />
     </div>
   </div>
@@ -46,10 +46,10 @@
   },
   computed: {
     ...mapGetters([
-        'PRODUCTS',
-        'BASKET',
-        'SEARCH_VALUE',
-        'FILTER_CATEGORY'
+      'PRODUCTS',
+      'BASKET',
+      'SEARCH_VALUE',
+      'FILTER_CATEGORY'
     ]),
     filteredProducts() {
       if (this.sortedProducts.length) {
@@ -61,8 +61,8 @@
   },
   methods: {
     ...mapActions([
-        'GET_PRODUCTS_FROM_API',
-        'ADD_TO_BASKET'
+      'GET_PRODUCTS_FROM_API',
+      'ADD_TO_BASKET'
     ]),
     addToBasket (data) {
       this.ADD_TO_BASKET(data);
@@ -122,6 +122,7 @@
 </script>
 
 <style>
+
   .shop-products-list {
       display: flex;
       flex-wrap: wrap;
